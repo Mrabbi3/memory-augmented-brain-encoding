@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-label="Memory module mechanism: current window is mean-pooled into a query, matched against a FIFO buffer by cosine similarity, the top-k memories are retrieved and integrated by cross-attention through a learnable gate.">
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<radialGradient id="memglow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#8b7bff" stop-opacity="0.5"/><stop offset="100%" stop-color="#8b7bff" stop-opacity="0"/></radialGradient>
+</defs>
+<rect x="2" y="2" width="996" height="356" rx="16" fill="#0c1016" stroke="#ffffff" stroke-opacity="0.08"/>
+<line x1="40" y1="14" x2="40" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="74" y1="14" x2="74" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="108" y1="14" x2="108" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="142" y1="14" x2="142" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="176" y1="14" x2="176" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="210" y1="14" x2="210" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="244" y1="14" x2="244" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="278" y1="14" x2="278" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="312" y1="14" x2="312" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="346" y1="14" x2="346" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="380" y1="14" x2="380" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="414" y1="14" x2="414" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="448" y1="14" x2="448" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="482" y1="14" x2="482" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="516" y1="14" x2="516" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="550" y1="14" x2="550" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="584" y1="14" x2="584" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="618" y1="14" x2="618" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="652" y1="14" x2="652" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="686" y1="14" x2="686" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="720" y1="14" x2="720" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="754" y1="14" x2="754" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="788" y1="14" x2="788" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="822" y1="14" x2="822" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="856" y1="14" x2="856" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="890" y1="14" x2="890" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="924" y1="14" x2="924" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<line x1="958" y1="14" x2="958" y2="346" stroke="#ffffff" stroke-opacity="0.022"/>
+<text x="34" y="36" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="600" fill="#e6edf3">memory module · retrieve and integrate</text>
+<text x="34" y="54" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8b96a8">how a single context window pulls in relevant past context</text>
+<rect x="40" y="176" width="150" height="68" rx="11" fill="rgba(159,176,216,0.06)" stroke="#a8b8e6" stroke-opacity="0.28" stroke-width="1"/>
+<text x="115.0" y="207.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">current window</text>
+<text x="115.0" y="225.0" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#8b96a8" text-anchor="middle">[T, 1152]</text>
+<line x1="190" y1="210" x2="248" y2="210" stroke="#9fb0d8" stroke-opacity="0.32" stroke-width="1.2" marker-end="url(#ah)"/>
+<circle r="2.1" fill="#9fb0d8" opacity="0"><animateMotion path="M190,210 L246,210" dur="1.4s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="1.4s" repeatCount="indefinite" begin="0.00s"/></circle>
+<circle r="2.1" fill="#9fb0d8" opacity="0"><animateMotion path="M190,210 L246,210" dur="1.4s" repeatCount="indefinite" begin="0.70s"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="1.4s" repeatCount="indefinite" begin="0.70s"/></circle>
+<text x="220" y="196" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10" fill="#8b96a8" text-anchor="middle">mean-pool</text>
+<rect x="250" y="184" width="96" height="52" rx="11" fill="rgba(159,176,216,0.06)" stroke="#a8b8e6" stroke-opacity="0.28" stroke-width="1"/>
+<text x="298.0" y="207.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">query q</text>
+<text x="298.0" y="225.0" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#8b96a8" text-anchor="middle">[1152]</text>
+<text x="530" y="84" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" fill="#8b96a8" text-anchor="middle">FIFO buffer (past windows)</text>
+<rect x="470" y="96" width="120" height="18" rx="4" fill="rgba(159,176,216,0.06)" stroke="#a8b8e6" stroke-opacity="0.30" stroke-width="1"/>
+<text x="478" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b96a8">m0</text>
+<rect x="470" y="122" width="120" height="18" rx="4" fill="rgba(139,123,255,0.18)" stroke="#8b7bff" stroke-opacity="1" stroke-width="1"/>
+<text x="478" y="135" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b96a8">m1</text>
+<text x="598" y="135" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10" fill="#cdb6ff">top-k</text>
+<rect x="470" y="148" width="120" height="18" rx="4" fill="rgba(159,176,216,0.06)" stroke="#a8b8e6" stroke-opacity="0.30" stroke-width="1"/>
+<text x="478" y="161" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b96a8">m2</text>
+<rect x="470" y="174" width="120" height="18" rx="4" fill="rgba(159,176,216,0.06)" stroke="#a8b8e6" stroke-opacity="0.30" stroke-width="1"/>
+<text x="478" y="187" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b96a8">m3</text>
+<rect x="470" y="200" width="120" height="18" rx="4" fill="rgba(139,123,255,0.18)" stroke="#8b7bff" stroke-opacity="1" stroke-width="1"/>
+<text x="478" y="213" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b96a8">m4</text>
+<text x="598" y="213" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10" fill="#cdb6ff">top-k</text>
+<rect x="470" y="226" width="120" height="18" rx="4" fill="rgba(159,176,216,0.06)" stroke="#a8b8e6" stroke-opacity="0.30" stroke-width="1"/>
+<text x="478" y="239" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b96a8">m5</text>
+<path d="M346,210 C400,210 430,105 470,105" fill="none" stroke="#9fb0d8" stroke-opacity="0.14" stroke-width="1" stroke-dasharray="3 6"><animate attributeName="stroke-dashoffset" values="0;-36" dur="1.4s" repeatCount="indefinite"/></path>
+<path d="M346,210 C400,210 430,131 470,131" fill="none" stroke="#8b7bff" stroke-opacity="0.55" stroke-width="1" stroke-dasharray="3 6"><animate attributeName="stroke-dashoffset" values="0;-36" dur="1.4s" repeatCount="indefinite"/></path>
+<path d="M346,210 C400,210 430,157 470,157" fill="none" stroke="#9fb0d8" stroke-opacity="0.14" stroke-width="1" stroke-dasharray="3 6"><animate attributeName="stroke-dashoffset" values="0;-36" dur="1.4s" repeatCount="indefinite"/></path>
+<path d="M346,210 C400,210 430,183 470,183" fill="none" stroke="#9fb0d8" stroke-opacity="0.14" stroke-width="1" stroke-dasharray="3 6"><animate attributeName="stroke-dashoffset" values="0;-36" dur="1.4s" repeatCount="indefinite"/></path>
+<path d="M346,210 C400,210 430,209 470,209" fill="none" stroke="#8b7bff" stroke-opacity="0.55" stroke-width="1" stroke-dasharray="3 6"><animate attributeName="stroke-dashoffset" values="0;-36" dur="1.4s" repeatCount="indefinite"/></path>
+<path d="M346,210 C400,210 430,235 470,235" fill="none" stroke="#9fb0d8" stroke-opacity="0.14" stroke-width="1" stroke-dasharray="3 6"><animate attributeName="stroke-dashoffset" values="0;-36" dur="1.4s" repeatCount="indefinite"/></path>
+<text x="420" y="292" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10" fill="#8b96a8" text-anchor="middle">cosine similarity</text>
+<circle cx="720" cy="210" r="62" fill="url(#memglow)"><animate attributeName="opacity" values="0.3;0.6;0.3" dur="2.4s" repeatCount="indefinite"/></circle>
+<rect x="650" y="170" width="140" height="80" rx="11" fill="rgba(139,123,255,0.10)" stroke="#8b7bff" stroke-width="1.2"/>
+<text x="720.0" y="207.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#cdb6ff" text-anchor="middle">cross-attention</text>
+<text x="720.0" y="225.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" fill="#cdb6ff" text-anchor="middle">Q · K · V</text>
+<text x="720" y="240" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#cdb6ff" text-anchor="middle">8 heads · pre-norm</text>
+<path d="M590,131 C600,131 600,192 650,192" fill="none" stroke="#8b7bff" stroke-opacity="0.45" stroke-width="1.1" marker-end="url(#ah)"/>
+<circle r="1.8" fill="#cdb6ff" opacity="0"><animateMotion path="M590,131 C600,131 600,192 650,192" dur="1.8s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="1.8s" repeatCount="indefinite" begin="0.00s"/></circle>
+<path d="M590,209 C600,209 600,192 650,192" fill="none" stroke="#8b7bff" stroke-opacity="0.45" stroke-width="1.1" marker-end="url(#ah)"/>
+<circle r="1.8" fill="#cdb6ff" opacity="0"><animateMotion path="M590,209 C600,209 600,192 650,192" dur="1.8s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="1.8s" repeatCount="indefinite" begin="0.00s"/></circle>
+<path d="M346,210 C520,210 540,234 650,234" fill="none" stroke="#9fb0d8" stroke-opacity="0.3" stroke-width="1.1" marker-end="url(#ah)"/>
+<text x="520" y="254" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10" fill="#8b96a8" text-anchor="middle">Q from window · K,V from memories</text>
+<circle cx="856" cy="210" r="18" fill="rgba(139,123,255,0.12)" stroke="#8b7bff" stroke-width="1.2"/>
+<text x="856" y="215" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" fill="#cdb6ff" text-anchor="middle">+</text>
+<line x1="790" y1="210" x2="836" y2="210" stroke="#8b7bff" stroke-opacity="0.32" stroke-width="1.2" marker-end="url(#ah)"/>
+<circle r="2.1" fill="#cdb6ff" opacity="0"><animateMotion path="M790,210 L836,210" dur="1.4s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="1.4s" repeatCount="indefinite" begin="0.00s"/></circle>
+<circle r="2.1" fill="#cdb6ff" opacity="0"><animateMotion path="M790,210 L836,210" dur="1.4s" repeatCount="indefinite" begin="0.70s"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="1.4s" repeatCount="indefinite" begin="0.70s"/></circle>
+<text x="856" y="184" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#cdb6ff" text-anchor="middle">gate = tanh(g)</text>
+<path d="M115,176 C115,90 856,90 856,192" fill="none" stroke="#9fb0d8" stroke-opacity="0.25" stroke-width="1.1" stroke-dasharray="4 5" marker-end="url(#ah)"/>
+<text x="250" y="80" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10" fill="#8b96a8" text-anchor="start">residual skip</text>
+<line x1="874" y1="210" x2="932" y2="210" stroke="#8b7bff" stroke-opacity="0.32" stroke-width="1.2" marker-end="url(#ah)"/>
+<text x="904" y="244" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10" fill="#8b96a8" text-anchor="middle">enriched</text>
+<text x="500.0" y="332" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8b96a8" text-anchor="middle">g starts at 0  →  the module begins as an identity map and only opens the gate if past context actually helps prediction</text>
+</svg>
